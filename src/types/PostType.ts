@@ -10,7 +10,7 @@ export type ContentData = {
 }
 
 export type PostData = {
-  id: number;
+  id?: number;
   author: AuthorData;
   content: ContentData[];
   publishedAt: Date;
