@@ -7,26 +7,11 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 
+import { PostData } from '../types/PostType';
+
 import styles from './Post.module.css';
 
-interface Author {
-  name: string;
-  rule: string;
-  avatarUrl: string;
-}
-
-interface Content {
-  type: 'paragraph' | 'link';
-  content: string;
-}
-
-interface PostProps {
-  author: Author;
-  content: Content[];
-  publishedAt: Date;
-}
-
-export function Post({  author, content, publishedAt }: PostProps) {
+export function Post({ author, content, publishedAt }: PostData) {
   const [comments, setComments] = useState(['Post muito bacana hein!!']);
   const [newCommentText, setNewCommentText] = useState('');
 
