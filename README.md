@@ -12,3 +12,9 @@ Libs:
 # ignite-feed
 
 - fique a vontade para contribuir
+
+# Execução do projeto
+
+- Faça o clone do repositório
+- Execute npm i ou yarn
+- Execute npm run dev ou yarn dev
